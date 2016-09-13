@@ -1,0 +1,39 @@
+#Dice rolling game - starting simple, roll two dice and the winner has the highest cumulative score"""
+
+import random
+
+player1 = input("What's your name brah?")
+Dieone = list(range(1,6))
+Dietwo = list(range(1,9))
+myrollone = random.choice(Dieone)
+myrolltwo = random.choice(Dietwo)
+computerroll1 = random.choice(Dieone)
+computerroll2 = random.choice(Dietwo)
+
+Answer = input("You ready to roll die number 1 bitch? Answer Yes or No: ")
+if Answer == "Yes":
+	print (player1, ", you rolled ", myrollone)
+elif Answer == "No":
+	print (player1, ", let me know when you pull your hands out of your ass and wanna get down")
+else:
+	print (player1, ", you chucked it off the table you idiot")
+		
+Answer2 = input("You ready to roll die number 2 dickhead? Answer Yes or No: ")		
+if Answer2 == "Yes":
+	print (player1, ", you rolled: ", myrolltwo)
+elif Answer2 == "No":
+	print (player1, ", I'll just sit here and wait")
+else: 
+	print (player1, ", get your shit together")
+
+print ("You rolled a cumulative score of: ", myrollone + myrolltwo)
+print ("The computer rolled a ", computerroll1, "and a ", computerroll2)
+print ("Since you can't do math, the computer scored a", computerroll1 + computerroll2)	
+
+if computerroll1 + computerroll2 == myrollone + myrolltwo:
+	print (player1, ", it's a tie, what is this fuckin soccer?")
+elif computerroll1 + computerroll2 >= myrollone + myrolltwo:
+	print (player1, " ... the computer won, time to suck its dick")
+else:
+	print (player1, ", you win! Nice dick!")
+
